@@ -8,8 +8,16 @@
 	4.  public boolean equalsIgnoreCase(String value);
 	5.  public String substring(int  beginindex)
 	6.  public String substring(int  beginindex,int  endIndex)
+	7.  public  int  length();
+	8.  public String replace(char oldchar,char newchar);
+	9.  public String toLowerCase();
+	10. public String toUpperCase();
+	11. public String trim();
+	12. public int indexOf(char ch);
+	13. public int lastIndexOf(char ch);
 
-	. public  int  length();
+
+	
 
 	
 */
@@ -88,10 +96,61 @@ class StringMethodsDemo1
 
 		 System.out.println(s2);
 
-		  */
+		  
+           
+		 String  s1=new String("java");
+
+		 String  s2=s1.replace('a','b');
+
+		 System.out.println(s2);//
+
+          String  s1=new String("java");
+
+          String s2= s1.toLowerCase();
+
+		  System.out.println(s2);
+
+
+		  String  s1=new String("java");
+
+          String s2= s1.toUpperCase();
+
+		  System.out.println(s2);
+
+		  
+
+		  String  s1=new String("    ja    va    ");
+
+          int s2= s1.length();
+		  System.out.println("s1==>"+s1);
+		  System.out.println("length==>"+s2);
+
+
+		   String s3=s1.trim();
+
+		   System.out.println("s3==>"+s3);
+
+		   System.out.println("length==>"+s3.length());
+
+		   
+
+		   String  s1=new String("java");
+		   int  a=s1.indexOf('a');
+
+		   System.out.println(a);
+
+		   
 
 
 
+		   String  s1=new String("javabbbba");
+
+		   int  a=s1.lastIndexOf('a');
+
+		   System.out.println(a);
+
+		   */
+         
 
 	}
 }
